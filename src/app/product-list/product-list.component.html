@@ -1,0 +1,17 @@
+<div class="col-md-12">
+    <h2 class="product-body"> Mymine Favorite Books</h2>
+    <p class="product-body">for <b>{{ myName }}</b></p>
+    <div class="col-md-12 product-body">
+        <div class="row">
+            <div class="card col-md-3 item-card" *ngFor="let item of listOfProduct">
+                <div class="card-body">
+                    <b>{{ item.title }}</b><br>
+                    Author : {{ item.author }}<br>
+                    <button type="button" class="btn btn-primary float-end" title="Add to my WISHLIST" (click)="addMyWishlist(item)">
+                        <i class="fa fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
